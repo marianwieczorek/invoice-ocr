@@ -62,5 +62,7 @@ In order to avoid overfitting, the colors of each training sample are changed ra
 First, all colors are shifted by a constant hue.
 This corresponds eg. to different lighting conditions.
 
+<code>c&middot;(1-&sigma;r)</code>
+
 Second, random noise is added.
 This corresponds eg. to noise from the camera sensor.
