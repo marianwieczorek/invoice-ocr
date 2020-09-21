@@ -37,20 +37,17 @@ A range of rotations of a single image is used for training. However, if an imag
 ### Relation between r, a, and &phi;
 With <code>0 &leq; &phi; &leq; &pi;/4</code>,
 
-<code>
-r&middot;cos(&pi;/4 - &phi;) = a/2
+<code>r&middot;cos(&pi;/4 - &phi;) = a/2</code>
 
-r = a/(2&middot;cos(&pi;/4 - &phi;)
-</code>
+<code>r = a/(2&middot;cos(&pi;/4 - &phi;)</code>
 
 ### Adding angles
-<code>
-cos(&pi;/4 - &phi;)
 
-= cos(&pi;/4)&middot;cos(&phi;) + sin(&pi;/4)&middot;sin(&phi;)
+<code>cos(&pi;/4 - &phi;)</code>
 
-= sqrt(0.5)&middot;(cos(&phi;) + sin(&phi;))
-</code>
+<code>= cos(&pi;/4)&middot;cos(&phi;)+sin(&pi;/4)&middot;sin(&phi;)</code>
+
+<code>= sqrt(0.5)&middot;(cos(&phi;)+sin(&phi;))</code>
 
 ### Relation between b, a, and phi
 b*sqrt(0.5) = a/(2*cos(π/4 - φ))
