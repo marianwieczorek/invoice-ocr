@@ -35,22 +35,17 @@ A range of rotations of a single image is used for training. However, if an imag
 <code>r = sqrt(2)&middot;b/2 = sqrt(0.5)&middot;b</code>
 
 ### Relation between r, a, and &phi;
-With <code>0 &leq; &phi; &leq; &pi;/4</code>,
-
-<code>r&middot;cos(&pi;/4 - &phi;) = a/2</code>
-
+With <code>0 &leq; &phi; &leq; &pi;/4</code>,\
+<code>r&middot;cos(&pi;/4 - &phi;) = a/2</code>\
 <code>r = a/(2&middot;cos(&pi;/4 - &phi;)</code>
 
 ### Adding angles
-
-<code>cos(&pi;/4 - &phi;)</code>
-
-<code>= cos(&pi;/4)&middot;cos(&phi;)+sin(&pi;/4)&middot;sin(&phi;)</code>
-
+<code>cos(&pi;/4 - &phi;)</code>\
+<code>= cos(&pi;/4)&middot;cos(&phi;)+sin(&pi;/4)&middot;sin(&phi;)</code>\
 <code>= sqrt(0.5)&middot;(cos(&phi;)+sin(&phi;))</code>
 
 ### Relation between b, a, and phi
-b*sqrt(0.5) = a/(2*cos(π/4 - φ))
-b*sqrt(0.5)*2*cos(π/4 - φ) = a
-b*sqrt(0.5)*2*sqrt(0.5)*(cos(φ) + sin(φ)) = a
-b = a/(cos(φ) + sin(φ))
+<code>b*sqrt(0.5) = a/(2*cos(π/4 - φ))</code>\
+<code>b*sqrt(0.5)*2*cos(π/4 - φ) = a</code>\
+<code>b*sqrt(0.5)*2*sqrt(0.5)*(cos(φ) + sin(φ)) = a</code>\
+<code>b = a/(cos(φ) + sin(φ))</code>
