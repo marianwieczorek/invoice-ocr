@@ -18,9 +18,9 @@ Every class has the property: for every angle x in [a, b) with m = 0.5*(a+b), x-
 The algorithm calls the neural net multiple times to reduce the rotation iteratively.
 
 ## Distinct rotation intervals
-[m0-r0, m0+r0), [m1-r1, m1+r1), …
-m0-r0 = 0°, mk-1+rk-1 = mk-rk
-rk < mk-1+rk-1, rk-1 < rk
+* [m0-r0, m0+r0), [m1-r1, m1+r1), ...
+* m0-r0 = 0°, mk-1+rk-1 = mk-rk
+* rk < mk-1+rk-1, rk-1 < rk
 
 The last condition ensures that applying the algorithm multiple times results in decreasing indices. Therefore, the image rotation approaches the smallest interval.
 
