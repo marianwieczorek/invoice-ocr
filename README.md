@@ -37,10 +37,10 @@ For training a range of rotations for each image is used.
 When an image is rotated the size must decrease to avoid filling missing information.
 Since the original section is already a square, the size computes as:
 
-### Relation between r and b
+### Relationship between r and b
 <code>r = &Sqrt;2&middot;b/2 = &Sqrt;&half;&middot;b</code>
 
-### Relation between r, a, and &phi;
+### Relationship between r, a, and &phi;
 With <code>0 &leq; &phi; &leq; &pi;/4</code>,\
 <code>r&middot;cos(&pi;/4-&phi;) = a/2</code>\
 <code>r = a/(2&middot;cos(&pi;/4-&phi;))</code>
@@ -50,27 +50,29 @@ With <code>0 &leq; &phi; &leq; &pi;/4</code>,\
 <code>= cos(&pi;/4)&middot;cos(&phi;)+sin(&pi;/4)&middot;sin(&phi;)</code>\
 <code>= &Sqrt;&half;&middot;(cos(&phi;)+sin(&phi;))</code>
 
-### Relation between b, a, and &phi;
+### Relationship between b, a, and &phi;
 <code>b&middot;&Sqrt;&half; = a/(2&middot;cos(&pi;/4-&phi;))</code>\
 <code>b&middot;&Sqrt;&half;&middot;2&middot;cos(&pi;/4-&phi;) = a</code>\
 <code>b&middot;&Sqrt;&half;&middot;2&middot;&Sqrt;&half;&middot;(cos(&phi;)+sin(&phi;)) = a</code>\
 <code>b = a/(cos(&phi;)+sin(&phi;))</code>
 
-## Tint and noise
+## Overfitting
 In order to avoid overfitting, the colors of each training sample are changed randomly.
 
-First, all colors are shifted by a constant hue.
+### Random tint
+All colors are shifted by a constant hue.
 This corresponds eg. to different lighting conditions.
 <code>c&middot;(w-&sigma;&middot;r)</code>,
 where c is a pixel color,
 w is the color white,
-r is a random color per image,
+r is a random color _per image_,
 and sigma is the maximum tint amount.
 
-Second, random noise is added.
+### Noise
+Random noise is added to each pixel.
 This corresponds eg. to noise from the camera sensor.
 <code>min{c+&sigma;&middot;r, w}</code>,
 where c is a pixel color,
 w is the color white,
-r is a random color per pixel,
+r is a random color _per pixel_,
 and sigma is the maximum noise amount.
