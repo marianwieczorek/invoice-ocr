@@ -32,7 +32,7 @@ TODO
 A range of rotations of a single image is used for training. However, if an image is rotated the size must decrease to avoid filling missing information. Since the original section is already a square, the size computes as:
 
 ### Relation between r and b
-<code>r = sqrt(2)&middot;b/2 = sqrt(0.5)&middot;b</code>
+<code>r = sqrt(2)&middot;b/2 = sqrt(&half;)&middot;b</code>
 
 ### Relation between r, a, and &phi;
 With <code>0 &leq; &phi; &leq; &pi;/4</code>,\
@@ -42,10 +42,10 @@ With <code>0 &leq; &phi; &leq; &pi;/4</code>,\
 ### Adding angles
 <code>cos(&pi;/4 - &phi;)</code>\
 <code>= cos(&pi;/4)&middot;cos(&phi;)+sin(&pi;/4)&middot;sin(&phi;)</code>\
-<code>= sqrt(0.5)&middot;(cos(&phi;)+sin(&phi;))</code>
+<code>= sqrt(&half;)&middot;(cos(&phi;)+sin(&phi;))</code>
 
 ### Relation between b, a, and phi
-<code>b*sqrt(0.5) = a/(2*cos(π/4 - φ))</code>\
-<code>b*sqrt(0.5)*2*cos(π/4 - φ) = a</code>\
-<code>b*sqrt(0.5)*2*sqrt(0.5)*(cos(φ) + sin(φ)) = a</code>\
+<code>b&middot;sqrt(&half;) = a/(2&middot;cos(&pi;/4 - &phi;))</code>\
+<code>b&middot;sqrt(&half;)&middot;2&middot;cos(&pi;/4 - &phi;) = a</code>\
+<code>b&middot;sqrt(&half;)&middot;2&middot;sqrt(&half;)&middot;(cos(&phi;)+sin(&phi;)) = a</code>\
 <code>b = a/(cos(φ) + sin(φ))</code>
