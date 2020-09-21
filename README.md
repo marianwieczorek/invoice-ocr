@@ -64,7 +64,7 @@ This corresponds eg. to different lighting conditions.
 <code>c&middot;(w-&sigma;&middot;r)</code>,
 where c is a pixel color,
 w is the color white,
-r is a random color,
+r is a random color per image,
 and sigma is the maximum tint amount.
 
 Second, random noise is added.
@@ -72,5 +72,5 @@ This corresponds eg. to noise from the camera sensor.
 <code>min{c+&sigma;&middot;r, w}</code>,
 where c is a pixel color,
 w is the color white,
-r is a random color,
+r is a random color per pixel,
 and sigma is the maximum noise amount.
