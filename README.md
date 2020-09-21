@@ -56,13 +56,21 @@ With <code>0 &leq; &phi; &leq; &pi;/4</code>,\
 <code>b&middot;&Sqrt;&half;&middot;2&middot;&Sqrt;&half;&middot;(cos(&phi;)+sin(&phi;)) = a</code>\
 <code>b = a/(cos(&phi;)+sin(&phi;))</code>
 
-## Hue and noise
+## Tint and noise
 In order to avoid overfitting, the colors of each training sample are changed randomly.
 
 First, all colors are shifted by a constant hue.
 This corresponds eg. to different lighting conditions.
-
-<code>c&middot;(1-&sigma;r)</code>
+<code>c&middot;(w-&sigma;&middot;r)</code>,
+where c is a pixel color,
+w is the color white,
+r is a random color,
+and sigma is the maximum tint amount.
 
 Second, random noise is added.
 This corresponds eg. to noise from the camera sensor.
+<code>min{c+&sigma;&middot;r, w}</code>,
+where c is a pixel color,
+w is the color white,
+r is a random color,
+and sigma is the maximum noise amount.
