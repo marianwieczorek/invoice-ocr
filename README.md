@@ -43,7 +43,7 @@ Since the original section is already a square, the size computes as:
 ### Relation between r, a, and &phi;
 With <code>0 &leq; &phi; &leq; &pi;/4</code>,\
 <code>r&middot;cos(&pi;/4-&phi;) = a/2</code>\
-<code>r = a/(2&middot;cos(&pi;/4-&phi;)</code>
+<code>r = a/(2&middot;cos(&pi;/4-&phi;))</code>
 
 ### Adding angles
 <code>cos(&pi;/4-&phi;)</code>\
@@ -51,8 +51,8 @@ With <code>0 &leq; &phi; &leq; &pi;/4</code>,\
 <code>= &Sqrt;&half;&middot;(cos(&phi;)+sin(&phi;))</code>
 
 ### Relation between b, a, and &phi;
-<code>b&middot;&Sqrt;&half; = a/(2&middot;cos(&pi;/4 - &phi;))</code>\
-<code>b&middot;&Sqrt;&half;&middot;2&middot;cos(&pi;/4 - &phi;) = a</code>\
+<code>b&middot;&Sqrt;&half; = a/(2&middot;cos(&pi;/4-&phi;))</code>\
+<code>b&middot;&Sqrt;&half;&middot;2&middot;cos(&pi;/4-&phi;) = a</code>\
 <code>b&middot;&Sqrt;&half;&middot;2&middot;&Sqrt;&half;&middot;(cos(&phi;)+sin(&phi;)) = a</code>\
 <code>b = a/(cos(&phi;)+sin(&phi;))</code>
 
