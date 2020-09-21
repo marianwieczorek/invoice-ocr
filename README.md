@@ -44,8 +44,8 @@ With <code>0 &leq; &phi; &leq; &pi;/4</code>,\
 <code>= cos(&pi;/4)&middot;cos(&phi;)+sin(&pi;/4)&middot;sin(&phi;)</code>\
 <code>= sqrt(&half;)&middot;(cos(&phi;)+sin(&phi;))</code>
 
-### Relation between b, a, and phi
+### Relation between b, a, and &phi;,
 <code>b&middot;sqrt(&half;) = a/(2&middot;cos(&pi;/4 - &phi;))</code>\
 <code>b&middot;sqrt(&half;)&middot;2&middot;cos(&pi;/4 - &phi;) = a</code>\
 <code>b&middot;sqrt(&half;)&middot;2&middot;sqrt(&half;)&middot;(cos(&phi;)+sin(&phi;)) = a</code>\
-<code>b = a/(cos(φ) + sin(φ))</code>
+<code>b = a/(cos(&phi;)+sin(&phi;))</code>
