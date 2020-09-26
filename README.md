@@ -1,2 +1,2 @@
-# invoice-ocr
+# Invoice OCR
  
