@@ -1,13 +1,11 @@
 import random
 import typing
 
-import cv2
 import numpy as np
 import tensorflow.keras as keras
 
-import invoice.training.images as im
-import invoice.training.loaders as ldr
-
+import invoice.common.images as im
+import invoice.common.labels as lbl
 
 image_size = 25
 
@@ -51,13 +49,9 @@ def create_model(input_shape: typing.Tuple[int, int, int]) -> keras.models.Model
 def main():
     print('Loading json file...')
     base_path = '../assets/'
-    data_list = ldr.load_json_data(base_path + 'labels.json')
+    data_list = lbl.load_json(base_path + 'labels.json')
     random.shuffle(data_list)
     data_test, data_train = data_list[:1], data_list[1:]
-
-    if True:
-        cv2.imshow('Test image', im.fit(ldr.load_image_from_json(data_test[0], base_path), image_size))
-        cv2.waitKey(1000)
 
     print('Generating testing data...')
     image_rotation_gen = generate_image_rotation_pairs(data_test, base_path)
