@@ -35,7 +35,7 @@ class Renderer(object):
     def _on_crop(self):
         height, width, _ = self._image.shape
         size = min(height, width)
-        self._image = img.crop(self._image, (size, size))
+        self._image = img.crop_to_square(self._image, size)
         self._update()
 
     def _on_rotate(self):
